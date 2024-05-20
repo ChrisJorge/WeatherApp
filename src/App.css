@@ -1,7 +1,25 @@
+.LoadingInputContainer{
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
 .inputContainer{
   display: flex;
   justify-content: center;
 }
+
+.input{
+  height: 50px;
+}
+
+.btn{
+  margin-left: 25px;
+  height: 60px;
+  width: 60px;
+}
+
 
 .information{
   text-align: center;

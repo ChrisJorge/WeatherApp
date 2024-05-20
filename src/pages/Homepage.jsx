@@ -22,9 +22,11 @@ function Homepage({api}) {
 
         return (
             <>
-                <div className="inputContainer">
-                    <Input type={'text'} text={'Enter Location'} state = {text} setState={updateText}/>
-                    <button onClick={getData}>Submit</button>
+                <div className="LoadingInputContainer">
+                    <div className="container">
+                        <Input type={'text'} text={'Enter Location'} state = {text} setState={updateText}/>
+                        <button onClick={getData} className='btn'>Submit</button>
+                    </div>
                 </div>    
             </>
           )
@@ -35,7 +37,7 @@ function Homepage({api}) {
             <>
             <div className="inputContainer">
                      <Input type={'text'} text={'Enter Location'} state = {text} setState={updateText}/>
-                     <button onClick={getData}>Submit</button>
+                     <button onClick={getData} className='btn'>Submit</button>
              </div>
              <div className="information">
                 <h1>{weather.resolvedAddress}</h1>
